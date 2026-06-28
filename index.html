@@ -113,43 +113,11 @@
       border-left: 5px solid var(--jmu-gold);
     }
 
-    label {
-      display: block;
-      margin-top: 0.8rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 0.45rem;
-      margin-top: 0.25rem;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 0.9rem;
-    }
-
-    button {
-      margin-top: 1rem;
-      background: var(--jmu-purple);
-      color: white;
-      border: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 999px;
-      font-size: 0.95rem;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #32105f;
-    }
-
     @media (max-width: 600px) {
       header h1 { font-size: 1.4rem; }
       .logo-bar img { max-height: 55px; }
       .card { padding: 0.8rem; }
       .photos img { max-width: 100%; }
-      button { width: 100%; padding: 0.8rem; font-size: 1rem; }
       .section-title { font-size: 1.15rem; }
     }
   </style>
@@ -202,41 +170,17 @@
       <h2 class="section-title">Availability</h2>
 
       <div class="form-card">
-        <!-- FIXED FORM: redirect removed -->
-        <form name="preference" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="preference" />
+        <h3 style="margin-top:0;">Family Availability Form</h3>
 
-          <label for="name">Your Name</label>
-          <select id="name" name="name" required>
-            <option value="">Select...</option>
-            <option>Brian</option>
-            <option>Kim</option>
-            <option>Brandon</option>
-            <option>Trent</option>
-            <option>Leyla</option>
-            <option>Kerri</option>
-            <option>Joe</option>
-          </select>
-
-          <label>Are you available Sept 4-6?</label>
-          <select name="avail_sept5" required>
-            <option value="">Choose...</option>
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-
-          <label>Are you available Oct 16-18?</label>
-          <select name="avail_oct17" required>
-            <option value="">Choose...</option>
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-
-          <label for="comments">Comments / Questions</label>
-          <textarea id="comments" name="comments"></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
+        <!-- Embedded Google Form -->
+        <iframe
+          src="https://docs.google.com/forms/d/1L4uhbl9L2nwaDE0SvjQFUwTCjCiyeogMrndTXxQNbY/preview"
+          width="100%"
+          height="900"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0">
+        </iframe>
       </div>
     </section>
 
@@ -248,4 +192,6 @@
 
 </body>
 </html>
+
+
 
