@@ -202,10 +202,8 @@
       <h2 class="section-title">Availability</h2>
 
       <div class="form-card">
-
-        <!-- FULLY CORRECT NETLIFY FORM -->
-        <form name="preference" method="POST" netlify action="/thankyou.html">
-          <input type="hidden" name="form-name" value="preference">
+        <form name="preference" method="POST" data-netlify="true" action="/thankyou.html">
+          <input type="hidden" name="form-name" value="preference" />
 
           <label for="name">Your Name</label>
           <select id="name" name="name" required>
@@ -238,7 +236,6 @@
 
           <button type="submit">Submit</button>
         </form>
-
       </div>
     </section>
 
